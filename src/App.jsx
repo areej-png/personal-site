@@ -1,3 +1,10 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero"
+
 export default function App() {
-  return <h1>Portfolio Coming Soon...</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
