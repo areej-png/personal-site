@@ -1,0 +1,222 @@
+/* Contact Section */
+.contact {
+  padding: 6rem 2rem 2rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1714 100%);
+  position: relative;
+}
+
+.contact .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact .section-title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #a3886b;
+  font-weight: 700;
+  animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  margin-bottom: 3rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.7;
+  animation: fadeIn 1s ease 0.2s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contact Cards */
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.contact-card {
+  background: rgba(26, 23, 20, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(163, 136, 107, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.contact-card:nth-child(1) { animation-delay: 0.1s; }
+.contact-card:nth-child(2) { animation-delay: 0.2s; }
+.contact-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Top glow line */
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #a3886b, transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.contact-card:hover::before {
+  transform: translateX(100%);
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  border-color: #a3886b;
+  box-shadow: 0 15px 40px rgba(163, 136, 107, 0.4);
+  background: rgba(26, 23, 20, 0.8);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  color: #a3886b;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 5px 15px #a3886b);
+}
+
+.contact-info h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #c4b5a3;
+}
+
+.contact-card:hover .contact-info h3 {
+  color: #a3886b;
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(163, 136, 107, 0.2);
+  animation: fadeIn 1s ease 0.5s both;
+}
+
+.resume-text {
+  font-size: 1.1rem;
+  color: #c4b5a3;
+  margin-bottom: 1.5rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #a3886b;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #a3886b;
+}
+
+.resume-btn:hover {
+  background: transparent;
+  color: #a3886b;
+  box-shadow: 0 10px 30px rgba(163, 136, 107, 0.4);
+  transform: translateY(-3px);
+}
+
+
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 4rem 1.5rem 1rem;
+  }
+
+  .contact .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .resume-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .contact-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
