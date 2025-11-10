@@ -1,0 +1,19 @@
+/* Footer */
+  .footer {
+    background: #0a0a0a;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(163, 136, 107, 0.2);
+    color: #826a52;
+  }
+
+.footer p {
+  color: #c4b5a3;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
