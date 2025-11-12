@@ -1,8 +1,23 @@
 import { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScroll = (id) => {
+    if (location.pathname !== "/") {
+      navigate(`/#${id}`);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -11,7 +26,7 @@ export default function Navbar() {
           Areej<span>Dev</span>
         </h2>
 
-        <div 
+        <div
           className={`menu-icon ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -21,11 +36,24 @@ export default function Navbar() {
         </div>
 
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-          <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-          <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>          
+          <li>
+            <a href="#home" onClick={() => handleScroll("home")}>Home</a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => handleScroll("about")}>About</a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => handleScroll("skills")}>Skills</a>
+          </li>
+          <li>
+            <Link to="/resume" className="nav-link" onClick={() => setMenuOpen(false)}>Resume</Link>
+          </li>
+          <li>
+            <a href="#projects" onClick={() => handleScroll("projects")}>Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => handleScroll("contact")}>Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
