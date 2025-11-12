@@ -23,7 +23,7 @@ export default function Resume() {
       {/*Printable Section */}
       <div id="resume" className="resume-container" ref={componentRef}>
         {/* ===== Header ===== */}
-        <div className="header">
+        <header className="header">
           <h1 className="name">{header.name}</h1>
           <p className="title">{header.title}</p>
           <div className="resume-contact">
@@ -33,16 +33,16 @@ export default function Resume() {
               </span>
             ))}
           </div>
-        </div>
+        </header>
 
         {/* ===== Summary ===== */}
-        <div className="section">
+        <section className="section">
           <h2 className="section-title">Professional Summary</h2>
           <p className="summary">{summary}</p>
-        </div>
+        </section>
 
         {/* ===== Skills ===== */}
-        <div className="section">
+        <section className="section">
           <h2 className="section-title">Technical Skills</h2>
           <div className="skills-grid">
             {skills.map((s, i) => (
@@ -56,10 +56,10 @@ export default function Resume() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* ===== Projects ===== */}
-        <div className="section">
+        <section className="section">
           <h2 className="section-title">Featured Projects</h2>
           {projects.map((p, i) => (
             <div className="project" key={i}>
@@ -71,10 +71,10 @@ export default function Resume() {
               <p className="project-description">{p.description}</p>
             </div>
           ))}
-        </div>
+        </section>
 
         {/* ===== Education ===== */}
-        <div className="section">
+        <section className="section">
           <h2 className="section-title">Education & Learning</h2>
           {education.map((edu, i) => (
             <div className="education-item" key={i}>
@@ -85,7 +85,7 @@ export default function Resume() {
               <span className="year">{edu.year}</span>
             </div>
           ))}
-        </div>
+        </section>
       </div>
 
       {/*Download Button */}
