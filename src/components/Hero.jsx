@@ -35,8 +35,8 @@ export default function Hero() {
         </p>
         
         <div className="cta-buttons">
-            <button className="btn btn-primary"  onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>View My Work</button>
-          <button className="btn btn-secondary"  onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Get in Touch</button>
+            <button className="btn btn-primary"  onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>View Projects</button>
+          <button className="btn btn-secondary"  onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>About me</button>
         </div>
       </div>
     </section>
