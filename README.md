@@ -1,16 +1,121 @@
-# React + Vite
+#  Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Overview
+This is my personal **React-based portfolio website** created to showcase my **skills, projects, and resume** as a **Front-End Developer**.  
+It highlights my work, experience, and contact information in a simple and modern interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
+-  Built entirely with **React.js**
+-  Modern and responsive UI design
+-  Structured, reusable components
+-  Integrated **downloadable resume (PDF)**
+-  Contact section with links
+-  Deployed and optimized for fast performance
 
-## React Compiler
+---
+## Built With
+### Frontend
+- **React.js-UI library**
+- **CSS3-Styling**
+- **JavaScript (ES6+) - Programming language**
+### Tools & Library
+- **Vite - Build tool**
+- **React Router - Navigation**
+- **React Icons-library**
+- **React-to-Print-PDF generation**
+- **Git & GitHub - Version control** 
+- **Vercel - Deployment** 
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
+```bash
+portfolio/
+├── public/
+│   ├── resume.pdf
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   ├── Skills.jsx
+│   ├── styles/
+│   │   ├──  About.css
+│   │   ├──  Contact.css
+│   │   ├──  Footer.css
+│   │   └── Hero.css
+│   │   ├── Navbar.css
+│   │   ├── Projects.css
+│   │   ├── Resume.css
+│   │   ├── Skills.css
 
-## Expanding the ESLint configuration
+│   ├── data/
+│   │   ├── resumedata.js
+│   ├── App.jsx
+│   └── index.css
+├── package.json
+└── README.md
+```
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## How to Run Locally
+```bash
+# Clone this repository
+git clone https://github.com/areej-png/personal-site.git
+
+# Navigate to the project folder
+cd personal-site
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev 
+```
+--- 
+
+## Live Demo 
+https://personal-site-steel-eight.vercel.app/#about
+
+---
+
+## Preview
+Here’s how the personal site looks in the browser:
+
+### Personal site UI 
+![Personal site screenshot](https://github.com/user-attachments/assets/6bd78bcb-8033-41df-8807-c7f691761e40)
+
+---
+
+## License
+
+This project and its source code are the exclusive property of **Areej Aamir**.  
+All rights reserved. Unauthorized copying, modification, or distribution is strictly prohibited.
+
+For permission requests, please contact:
+[areejamir890@gmail.com].
+
+---
+
+## Author 
+Areej Aamir
+- https://personal-site-steel-eight.vercel.app/#about
+
+---
+
+## Acknowledgments
+- Inspiration from various portfolio designs
+- Icons from React Icons
+- Fonts from Google Fonts
+
+## Notes
+This portfolio was built as a showcase of my front-end development skills and journey as a self-taught developer.
+This project is for personal and presentation purposes only — not for reuse or redistribution.
