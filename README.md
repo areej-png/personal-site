@@ -1,5 +1,7 @@
 #  Personal Portfolio Website
-
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=appveyor)](https://personal-site-steel-eight.vercel.app/#about)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)]()
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/areej-png/personal-site?style=for-the-badge)]()
 ##  Overview
 This is my personal **React-based portfolio website** created to showcase my **skills, projects, and resume** as a **Front-End Developer**.  
 It highlights my work, experience, and contact information in a simple and modern interface.
