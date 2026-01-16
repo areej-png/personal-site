@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <h2 className="logo">
-          Areej<span>Dev</span>
+          SIDRA<span>Dev</span>
         </h2>
 
         <div

@@ -19,7 +19,7 @@ export default function About() {
           {/* Main Content */}
           <div className="about-content">
             <div className="about-intro">
-              <h3 className="intro-heading">Hi, I'm Areej! 👋</h3>
+              <h3 className="intro-heading">Hi, I'm Sidra! 👋</h3>
               <p className="about-text highlight">
                 I'm a passionate <strong>Front-End Developer</strong> focused on creating modern,
                 responsive, and user-friendly web experiences.

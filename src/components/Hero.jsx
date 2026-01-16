@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="hero-container">
         <p className="greeting">Hi, I'm</p>
         
-        <h1 className="hero-name">Areej Aamir</h1>
+        <h1 className="hero-name">Sidra Aamir</h1>
         
         <div className="title-container">
           <h2 className="animated-title">{titles[titleIndex]}</h2>
