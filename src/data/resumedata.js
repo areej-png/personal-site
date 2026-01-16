@@ -3,7 +3,7 @@ import { data } from "react-router-dom";
 // data.js
 export const resumeData = {
   header: {
-    name: "AREEJ AAMIR",
+    name: "SIDRA AAMIR",
     title: "Front-End Developer",
     contact: [
       { icon: "📧", text: "areejamir890@gmail.com" },
@@ -12,10 +12,7 @@ export const resumeData = {
     ],
   },
 
-  summary: `Self-taught Front-End Developer with expertise in React, JavaScript, 
-  and modern web technologies. Proven ability to build responsive, user-friendly 
-  applications from concept to deployment. Strong foundation in clean code practices 
-  and version control with 6+ completed projects demonstrating practical skills.`,
+  summary: `Front-End Developer specializing in React and modern JavaScript, with hands-on experience building responsive, user-friendly web applications. Strong practical background in API integration, state management, version control, and deployment. Completed 6+ real-world projects demonstrating clean code practices and problem-solving skills while pursuing a Bachelor of Computer Science.`,
 
   skills: [
     {
@@ -48,7 +45,7 @@ export const resumeData = {
         "Responsive movie search application fetching real-time data from OMDb API with dynamic results display including posters and movie details.",
     },
     {
-         title: "Interactive Quiz App<",
+         title: "Interactive Quiz App",
       date: "Oct 2025",
       tech: "HTML • CSS • JavaScript",
       description:
@@ -56,7 +53,7 @@ export const resumeData = {
     },
     {
         title: "GitHub Workflow Simulation",
-        data: "Oct 2025",
+        date: "Oct 2025",
         tech: "Git • GitHub • Version Control",
         description: 
         "Professional workflow simulation practicing branch management, pull requests, conflict resolution, and rebasing techniques."
@@ -82,5 +79,10 @@ export const resumeData = {
       institution: "Women College, Karachi",
       year: "Completed",
     },
+    {
+      degree: "Bachelor of computer science",
+      institution: "University of Karachi",
+      year: "2023 - In Progress",
+    }
   ],
 };
