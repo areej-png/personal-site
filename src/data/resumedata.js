@@ -12,12 +12,16 @@ export const resumeData = {
     ],
   },
 
-  summary: `Front-End Developer specializing in React and modern JavaScript, with hands-on experience building responsive, user-friendly web applications. Strong practical background in API integration, state management, version control, and deployment. Completed 6+ real-world projects demonstrating clean code practices and problem-solving skills while pursuing a Bachelor of Computer Science.`,
+  summary: `Front-End Developer skilled in React, Next.js, Shopify & JavaScript, with 8+ real-world projects. Passionate about building responsive, user-friendly, and headless e-commerce web applications.`,
 
   skills: [
     {
       category: "Frontend",
-      items: ["HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Responsive Design"],
+      items: ["HTML5 & CSS3", "JavaScript (ES6+)", "React.js", "Next.js", "Responsive Design"],
+    },
+    {
+      category: "E-Commerce",
+      items: ["Shopify (Theme Dev & Customization)", "Headless Commerce", "GraphQL"],
     },
     {
       category: "Tools",
@@ -30,6 +34,20 @@ export const resumeData = {
   ],
 
   projects: [
+    {
+      title: "Ak Ambala's — Headless E-Commerce Store",
+      date: "Jul 2026",
+      tech: "Next.js • Shopify • GraphQL",
+      description:
+        "Built a headless e-commerce store using Next.js and Shopify, with GraphQL powering a fully headless architecture for fast, flexible storefront delivery. Strong performance scores on Google PageSpeed Insights.",
+    },
+    {
+      title: "Monaz — Shopify E-Commerce Store",
+      date: "May 2026",
+      tech: "Shopify • Theme Customization",
+      description:
+        "Developed and launched a Shopify store, customizing a base theme end-to-end — layout, branding, and product presentation — to match store requirements.",
+    },
     {
       title: "Weather App (React)",
       date: "Nov 2025",
@@ -44,28 +62,6 @@ export const resumeData = {
       description:
         "Responsive movie search application fetching real-time data from OMDb API with dynamic results display including posters and movie details.",
     },
-    {
-         title: "Interactive Quiz App",
-      date: "Oct 2025",
-      tech: "HTML • CSS • JavaScript",
-      description:
-      " Interactive quiz with multiple-choice questions, navigation functionality, and score tracking demonstrating JavaScript logic and DOM manipulation."
-    },
-    {
-        title: "GitHub Workflow Simulation",
-        date: "Oct 2025",
-        tech: "Git • GitHub • Version Control",
-        description: 
-        "Professional workflow simulation practicing branch management, pull requests, conflict resolution, and rebasing techniques."
-       
-    },
-    {
-        title: "Simple Calculator",
-        date: "Oct 2025",
-        tech: "HTML • CSS • JavaScript",
-        description:
-        "Functional calculator with clean UI supporting basic arithmetic operations with styled interactive buttons."
-    }
   ],
 
   education: [
