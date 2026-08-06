@@ -48,10 +48,11 @@ export default function Projects() {
               key={index} 
               className={`project-card ${project.featured ? 'featured' : ''}`}
             >
-              {project.featured && <span className="featured-badge">Featured</span>}
-              
               <div className="project-content">
-                <h3>{project.title}</h3>
+                <div className="project-title-row">
+                  <h3>{project.title}</h3>
+                  {project.featured && <span className="featured-badge">Featured</span>}
+                </div>
                 <p>{project.description}</p>
                 
                 <div className="tech-tags">
