@@ -4,12 +4,26 @@ import '../styles/Projects.css';
 export default function Projects() {
   const projects = [
     {
+      title: "Ak Ambala's — Headless E-Commerce Store",
+      description: "Built a headless e-commerce storefront using Next.js and Shopify, with GraphQL powering a fully headless architecture for fast, flexible storefront delivery. Achieved strong performance scores on Google PageSpeed Insights.",
+      tech: ['Next.js', 'Shopify', 'GraphQL', 'Vercel'],
+      liveLink: 'https://akambalas.com',
+      codeLink: 'https://github.com/areej-png/ak-ambalas-next',
+      featured: true
+    },
+    {
+      title: 'Monaz — Shopify E-Commerce Store',
+      description: "Developed and launched a Shopify store, customizing a base theme end-to-end — layout, branding, and product presentation — to match store requirements.",
+      tech: ['Shopify', 'Theme Customization'],
+      liveLink: 'https://monaaz.com',
+      codeLink: null
+    },
+    {
       title: 'Weather App',
       description: 'Built a responsive weather application using React, OpenWeatherMap API, and localStorage. Features temperature conversion (°C/°F), recent searches, smooth animations, and real-time weather data.',
       tech: ['React', 'CSS', 'REST API', 'localStorage', 'Vercel'],
       liveLink: 'https://weather-app-react-phi-flax.vercel.app/',
-      codeLink: 'https://github.com/areej-png/Weather-App-react',
-      featured: true
+      codeLink: 'https://github.com/areej-png/Weather-App-react'
     },
     {
       title: 'Movie Search App',
@@ -17,27 +31,6 @@ export default function Projects() {
       tech: ['HTML', 'CSS', 'JavaScript', 'OMDb API'],
       liveLink: 'https://movie-search-app-three-lac.vercel.app/', 
       codeLink: 'https://github.com/areej-png/movie-search-app'
-    },
-    {
-      title: "Interactive Quiz App",
-      description: "A simple interactive quiz application with multiple-choice questions. Users can navigate through questions and see their final score. Built to practice JavaScript logic and DOM manipulation.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      liveLink: 'https://quiz-app-js-roan.vercel.app/', 
-      codeLink: 'https://github.com/areej-png/quiz-app-js'
-    },
-    {
-      title: 'Simple Calculator',
-      description: "A functional calculator supporting basic arithmetic operations (addition, subtraction, multiplication, division) with a clean user interface and styled interactive buttons.",
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      liveLink: 'https://simple-calculator-9xel.vercel.app/',
-      codeLink: 'https://github.com/areej-png/simple-calculator'
-    },
-    {
-      title: "GitHub Workflow Simulation",
-      description: "Simulated a professional GitHub team workflow to practice real-world version control techniques. Implemented branch management, pull requests, conflict resolution, squash merges, and rebasing.",
-      tech: ["Git", "GitHub", "Version Control"],
-      liveLink: 'https://team-project-dpuy.vercel.app/',
-      codeLink: 'https://github.com/areej-png/team-project'
     }
   ];
 
@@ -46,7 +39,7 @@ export default function Projects() {
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
         <p className="section-subtitle">
-          A collection of 6 projects showcasing my journey in React, JavaScript, and web development
+          A collection of projects showcasing my journey in React, Next.js, Shopify, and web development
         </p>
 
         <div className="projects-grid">
@@ -69,14 +62,16 @@ export default function Projects() {
               </div>
 
               <div className="project-links">
-                <a 
-                  href={project.codeLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-link"
-                >
-                  <FaGithub /> Code
-                </a>
+                {project.codeLink && (
+                  <a 
+                    href={project.codeLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-link"
+                  >
+                    <FaGithub /> Code
+                  </a>
+                )}
                 <a 
                   href={project.liveLink} 
                   target="_blank" 
